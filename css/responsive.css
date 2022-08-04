@@ -1,0 +1,162 @@
+@media (max-width:1000px) {
+    .mid_text .download_btn img{
+        width: 20px;
+        animation: moving 1.3s infinite;
+    
+    }
+    .show_menu_btn,
+.hide_menu_btn{
+    display: block;
+}
+.menu{
+    position: fixed;
+    top: 0px;
+    left: -5400px;
+    z-index: 1111;
+    background-color: #3c301d;
+    width: 100%;
+    height: 100vh;
+}
+.hero_section .header_area li{
+    display: block;
+    line-height: 100px;
+    text-align: center;
+}
+.show_menu_btn i{
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+.hide_menu_btn i{
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    cursor: pointer;
+    color: white;
+
+
+}
+.hero_section .header_area a:checked .menu{
+    left: -5400px;
+}
+.hero_section .header_area a:hover::before{
+    content: "";
+    width: 0%;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+ 
+
+}
+#check:checked ~ .menu{
+    left: 0px;
+    transition: 0.5s;
+}
+
+}
+@media (max-width:600px) {
+    .hero_section{
+        background-position: -260px 0px;
+    }
+  
+    .hero_section .container_div img {
+        width: 190px;
+    }
+    .show_menu_btn i {
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+}
+.hide_menu_btn i{
+    font-size: 36px;
+    top: 30px;
+    right: 30px;
+}
+.hero_section .mid_text h1 {
+    line-height: 57px;
+    font-size: 47px;
+    text-align: center;
+}
+.hero_section .container_div p {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.download_btn{
+    text-align: center;
+}
+.hero_section .mid_text a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 18px 8px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+.mid_text .download_btn img{
+    width: 20px;
+    animation: moving 1.3s infinite;
+
+}
+}
+@media (max-width:400px) {
+    .hero_section{
+        background-position: -350px 0px;
+    }
+}
+@media (max-width:350px) {
+    .hero_section{
+        background-position: -380px 0px;
+    }
+}
+@media (max-width:300px) {
+    .hero_section{
+        background-position: -350px 0px;
+    }
+ 
+    .hero_section .container_div img {
+        width: 190px;
+    }
+    .show_menu_btn i {
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+.hide_menu_btn i{
+    font-size: 36px;
+    top: 30px;
+    right: 30px;
+}
+.hero_section .mid_text h1 {
+    line-height: 57px;
+    font-size: 47px;
+    text-align: center;
+}
+.hero_section .container_div p {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+.download_btn{
+    text-align: center;
+}
+.hero_section .mid_text a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 18px 8px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+.mid_text .download_btn img{
+    width: 15px;
+    animation: moving 1.3s infinite;
+
+}
+}

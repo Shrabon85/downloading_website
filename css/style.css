@@ -1,0 +1,154 @@
+/*
+    ===========================
+       important css linn start
+    ===========================
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins
+
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.clear_div {
+    clear: both;
+}
+
+.container_div{
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+    
+}
+
+/*
+    ===========================
+       important css linn End
+    ===========================
+*/
+
+.hero_section{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/background.png);
+    background-size: cover;
+}
+.hero_section .header_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.hero_section .header_area ul{
+    margin: 0;
+}
+.hero_section .header_area li{
+    display: inline-block;
+}
+.hero_section .header_area li a{
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.hero_section .header_area a::before{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hero_section .header_area a:hover::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+ 
+
+}
+
+.hero_section .container_div img{
+    width: 250px;
+}
+.hero_section .container_div h1{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    text-transform: capitalize;
+}
+.hero_section .mid_text{
+   margin-top: 10vh;
+}
+.hero_section .container_div p{
+    color: white;
+    font-size: 18px;
+}
+.hero_section .mid_text .download_btn{
+    margin-top: 50px;
+}
+.hero_section .mid_text h1{
+    line-height: 95px;
+    font-size:75px;
+    font-weight: 700;
+}
+.hero_section .mid_text  a{
+   
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.mid_text .download_btn img{
+    width: 20px;
+  
+    animation: moving 1.3s infinite;
+
+}
+
+
+.show_menu_btn,
+.hide_menu_btn{
+    display: none;
+}
+
+.header_area input{
+    display: none;
+}
+
+@keyframes moving{
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(-3px);
+    }
+}
+
+
